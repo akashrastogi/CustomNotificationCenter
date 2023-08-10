@@ -11,14 +11,14 @@ typealias Closure = (String, Any) -> Void
 
 final class CustomNotificationCenter {
   static let shared = CustomNotificationCenter()
-  private init() {
+  init() {
     storage = [:]
   }
 
   private var storage: [String: [String: [Closure]]]
 
-  func addObserver(_ _class: AnyClass, name: String, closure: @escaping Closure) {
-    let className = String(describing: _class)
+  func addObserver(_ observer: AnyObject, name: String, closure: @escaping Closure) {
+    let className = String(describing: observer)
     if storage[className] != nil, storage[className]?[name] != nil {
       storage[className]?[name]?.append(closure)
     } else {
@@ -26,13 +26,13 @@ final class CustomNotificationCenter {
     }
   }
 
-  func removeObserver(_ _class: AnyClass) {
-    let className = String(describing: _class)
+  func removeObserver(_ observer: AnyObject) {
+    let className = String(describing: observer)
     storage.removeValue(forKey: className)
   }
 
-  func removeObserver(_ _class: AnyClass, name: String) {
-    let className = String(describing: _class)
+  func removeObserver(_ observer: AnyObject, name: String) {
+    let className = String(describing: observer)
     storage[className]?.removeValue(forKey: name)
   }
 
