@@ -13,6 +13,7 @@
 		1BA9E5252A85605E006A918D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9E5232A85605E006A918D /* Main.storyboard */; };
 		1BA9E5272A85605F006A918D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9E5262A85605F006A918D /* Assets.xcassets */; };
 		1BA9E52A2A85605F006A918D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9E5282A85605F006A918D /* LaunchScreen.storyboard */; };
+		1BA9E5332A856073006A918D /* CustomNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9E5322A856073006A918D /* CustomNotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1BA9E5262A85605F006A918D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA9E5292A85605F006A918D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA9E52B2A85605F006A918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA9E5322A856073006A918D /* CustomNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		1BA9E51C2A85605E006A918D /* CustomNotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
+				1BA9E5312A85606B006A918D /* CustomNotificationCenter */,
 				1BA9E51D2A85605E006A918D /* AppDelegate.swift */,
 				1BA9E51F2A85605E006A918D /* SceneDelegate.swift */,
 				1BA9E5212A85605E006A918D /* ViewController.swift */,
@@ -63,6 +66,14 @@
 				1BA9E5262A85605F006A918D /* Assets.xcassets */,
 				1BA9E5282A85605F006A918D /* LaunchScreen.storyboard */,
 				1BA9E52B2A85605F006A918D /* Info.plist */,
+			);
+			path = CustomNotificationCenter;
+			sourceTree = "<group>";
+		};
+		1BA9E5312A85606B006A918D /* CustomNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				1BA9E5322A856073006A918D /* CustomNotificationCenter.swift */,
 			);
 			path = CustomNotificationCenter;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA9E5332A856073006A918D /* CustomNotificationCenter.swift in Sources */,
 				1BA9E5222A85605E006A918D /* ViewController.swift in Sources */,
 				1BA9E51E2A85605E006A918D /* AppDelegate.swift in Sources */,
 				1BA9E5202A85605E006A918D /* SceneDelegate.swift in Sources */,
